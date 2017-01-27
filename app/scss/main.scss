@@ -1,3 +1,114 @@
-.main-section {
-  background-image: url("/images/conference-background.png")
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One');
+
+#navbar-primary .navbar-nav {
+ background: rgba(237,237,237,0.40);
+  width: 100%;
+  text-align: center;
+  margin:0;
+  padding:0;
+  > li {
+    display: inline-block;
+    float: none;
+    font-variant: small-caps;
+    > a {
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: 18px;
+      // color: #ffffff;
+      text-decoration: none;
+      font-family: 'Hammersmith One', sans-serif;
+    }
+  }
 }
+
+.main-section {
+  background-image: url("/images/conference-background.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+  background-color: transparent;
+  color: #B435B4;
+}
+
+.nav>li:focus, .nav>li:hover{
+color: #B435B4;
+}
+
+.logo-text{
+font-family: 'Hammersmith One', sans-serif;
+font-size: 28px;
+color: #B435B4;
+padding-top: 15px;
+}
+
+.main-body{
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+.main-body h1 {
+  font-size:90px;
+  color: #B435B4;
+}
+.main-body p {
+  font-size: 38px;
+}
+
+
+/* WebKit and Opera browsers */
+@-webkit-keyframes spinner {
+  from { -webkit-transform: rotateY(0deg);    }
+  to   { -webkit-transform: rotateY(-360deg); }
+}
+
+/* all other browsers */
+@keyframes spinner {
+  from {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  to {
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+  }
+}
+
+#stage {
+  margin: 1em auto;
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  -ms-perspective: 1200px;
+  perspective: 1200px;
+}
+
+#spinner {
+   -webkit-animation-name: spinner;
+   -webkit-animation-timing-function: linear;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-duration: 10s;
+
+   animation-name: spinner;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-duration: 10s;
+
+   -webkit-transform-style: preserve-3d;
+   -moz-transform-style: preserve-3d;
+   -ms-transform-style: preserve-3d;
+   transform-style: preserve-3d;
+
+   margin-top: 10%;
+   width:400px;
+ }
+
+ #spinner:hover {
+   -webkit-animation-play-state: paused;
+   animation-play-state: paused;
+ }
