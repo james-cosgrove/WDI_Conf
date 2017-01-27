@@ -22,8 +22,16 @@ gulp.task('reload', function() {
 });
 
 // watches for any saved changes on js, html and scss files
-gulp.task('watch-for-changes', ['sass-to-css'], function() {
+gulp.task('watch', ['sass-to-css', 'sync'], function() {
   gulp.watch(sassPath, ['sass-to-css']);
   gulp.watch(scriptPath, ['reload']);
   gulp.watch(htmlPath, ['reload']);
+});
+
+gulp.task('sync', function() {
+  browserSync.init({
+    server: {
+      baseDir: 'app'
+    },
+  });
 });
