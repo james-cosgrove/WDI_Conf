@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Hammersmith+One");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+html {
+  font-family: 'Hammersmith One', sans-serif; }
+
 #navbar-primary .navbar-nav {
   background: rgba(237, 237, 237, 0.4);
   width: 100%;
@@ -15,6 +19,9 @@
       font-size: 18px;
       text-decoration: none;
       font-family: 'Hammersmith One', sans-serif; }
+
+a {
+  color: #ffffff; }
 
 .main-section {
   background-image: url("/images/conference-background.jpg");
@@ -92,3 +99,93 @@
 #spinner:hover {
   -webkit-animation-play-state: paused;
   animation-play-state: paused; }
+
+.fa-angle-down {
+  color: #ffffff;
+  margin-left: 50%;
+  padding-top: 10px;
+  transition: all .2s ease-in-out; }
+
+.fa-angle-down:hover {
+  color: #B435B4;
+  transform: scale(1.4); }
+
+.section2 {
+  height: 100vh; }
+
+.section2 h2 {
+  font-size: 60px;
+  text-align: center;
+  margin-top: 180px;
+  font-family: 'Hammersmith One', sans-serif; }
+
+.section2-header p {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-style: italic; }
+
+.experience-box {
+  height: 500px;
+  border: 2px solid #000000;
+  margin: 100px 20px 0;
+  font-family: 'Hammersmith One', sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+.experience-box h3 {
+  text-align: center;
+  padding-top: 15px; }
+
+.experience-box a {
+  color: blue;
+  font-size: 10px; }
+
+.experience-box a:hover {
+  color: #B435B4;
+  text-decoration: none; }
+
+#container {
+  height: 90%;
+  margin: 0 auto;
+  padding-bottom: 10px; }
+
+#container p {
+  padding: 20px;
+  font-size: 20px;
+  margin-top: 40px;
+  font-family: 'Raleway', sans-serif; }
+
+#front-box {
+  background-color: rgba(180, 53, 180, 0.95);
+  z-index: 4; }
+
+.lang-logos {
+  height: 60px;
+  padding: 0 10px;
+  margin: 0 0 20px 30px; }
+
+#bootstrap_logo {
+  height: 50px; }
+
+#box-base tr {
+  transition: all .2s ease-in-out; }
+
+#box-base tr:hover {
+  transform: scale(1.05); }
+
+.speaker {
+  height: 70px;
+  margin: 10px; }
+
+#container1 span {
+  font-weight: bold;
+  text-transform: uppercase; }
+
+#section3-fa {
+  color: #000000;
+  margin-top: 600px; }
