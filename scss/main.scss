@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Hammersmith+One');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
 html {
   font-family: 'Hammersmith One', sans-serif;
@@ -227,4 +228,92 @@ padding-top: 15px;
  #section3-fa {
    color: #000000;
    margin-top: 600px;
+   margin-left: 700px;
  }
+
+ .section3 {
+   height: 100vh;
+   text-align: center;
+   margin-top: 11%;
+   padding:0 50px;
+   > h3 {
+     font-size: 50px;
+     text-transform: uppercase;
+     padding: 15px 0;
+     font-family: 'Hammersmith One', sans-serif;
+   }
+ }
+
+  .section3 p {
+      font-size: 20px;
+      line-height: 30px;
+      padding-bottom: 15px;
+      font-family: 'Raleway', sans-serif;
+  }
+
+  .section3 .book-now {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .section3 .book-link {
+      color: #B435B4;
+  }
+
+  .section3 .book-link:hover{
+    color:#333333;
+    text-decoration: none;
+    background-color: transparent;
+  }
+
+  .section3 p span {
+    font-family: 'Permanent Marker', cursive;
+  }
+
+  .section3 .signed {
+    font-size: 22px;
+    margin-right: 50px;
+  }
+
+  .section3 .party-image {
+    width:100%;
+    height: auto;
+  }
+
+  #section4-fa{
+    color:#000000;
+    margin-left: -20px;
+  }
+
+  .section4 {
+    height: 100vh;
+    padding:40px 50px;
+    margin-top: 50px;
+  }
+
+  .section4 .register-blurb, .section4 .register-here {
+    height: auto;
+  }
+
+  .section4 .register-blurb {
+    background-color: #44B3E7;
+    padding: 30px;
+      > p {
+        font-size: 18px;
+        font-family: 'Raleway', sans-serif;
+      }
+  }
+
+  .section4 .register-blurb h3{
+    font-size: 50px;
+    font-family: 'Hammersmith One', sans-serif;
+  }
+
+  .section4 .friends-fingers {
+    width: 60%;
+    height: auto;
+    -ms-transform: rotate(-7deg); /* IE 9 */
+   -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+   transform: rotate(-7deg);
+   margin-left: 80px;
+  }
