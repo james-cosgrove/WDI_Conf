@@ -18,7 +18,7 @@ $(document).ready(function(){
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
         if (target.length) {
           $('html, body').animate({
-            scrollTop: target.offset().top
+            scrollTop: target.offset().top - $("#navbar-primary").height()
           }, 1000);
           return false;
         }
@@ -26,7 +26,21 @@ $(document).ready(function(){
     });
   });
 
-
+  function init() {
+      window.addEventListener('scroll', function(e){
+          var distanceY = window.pageYOffset || document.documentElement.scrollTop;
+              shrinkOn = 100;
+            // var header = document.querySelector("#navbar-primary");
+          if (distanceY > shrinkOn) {
+              $('nav').addClass("smaller");
+          } else {
+              if ($('nav').hasClass("smaller")) {
+                $('nav').removeClass("smaller");
+              }
+          }
+      });
+  }
+  window.onload = init();
 
 
 

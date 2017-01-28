@@ -9,8 +9,15 @@ html {
   width: 100%;
   text-align: center;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  height: 100px;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  -ms-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s; }
   #navbar-primary .navbar-nav > li {
+    margin-left: 50px;
     display: inline-block;
     float: none;
     font-variant: small-caps; }
@@ -20,6 +27,19 @@ html {
       font-size: 18px;
       text-decoration: none;
       font-family: 'Hammersmith One', sans-serif; }
+
+nav.smaller {
+  height: 60px; }
+
+nav.smaller #logo-navbar-middle {
+  height: 30px;
+  width: auto; }
+
+nav.smaller .logo-text {
+  font-size: 20px; }
+
+nav.smaller a {
+  color: #333333; }
 
 a {
   color: #ffffff; }
@@ -38,6 +58,15 @@ a {
 .nav > li:focus, .nav > li:hover {
   color: #B435B4; }
 
+#logo-navbar-middle {
+  height: 50px;
+  width: auto;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
 .logo-text {
   font-family: 'Hammersmith One', sans-serif;
   font-size: 28px;
@@ -46,6 +75,7 @@ a {
 
 .main-body {
   text-align: center;
+  padding-top: 100px;
   color: #ffffff;
   font-family: 'Hammersmith One', sans-serif; }
 
@@ -75,7 +105,7 @@ a {
     transform: rotateY(-360deg); } }
 
 #stage {
-  margin: 1em auto;
+  margin: 0 auto;
   -webkit-perspective: 1200px;
   -moz-perspective: 1200px;
   -ms-perspective: 1200px;
@@ -117,7 +147,8 @@ a {
 .section2 h2 {
   font-size: 60px;
   text-align: center;
-  margin-top: 180px;
+  margin-top: 100px;
+  padding-top: 30px;
   font-family: 'Hammersmith One', sans-serif; }
 
 .section2-header p {
@@ -128,9 +159,9 @@ a {
   font-style: italic; }
 
 .experience-box {
-  height: 500px;
+  height: 450px;
   border: 2px solid #000000;
-  margin: 100px 20px 0;
+  margin: 60px 20px 0;
   font-family: 'Hammersmith One', sans-serif;
   position: absolute;
   top: 0;
@@ -189,28 +220,28 @@ a {
 
 #section3-fa {
   color: #000000;
-  margin-top: 600px;
+  margin-top: 500px;
   margin-left: 700px; }
 
 .section3 {
   height: 100vh;
   text-align: center;
-  margin-top: 11%;
-  padding: 0 50px; }
+  margin-top: 50px;
+  padding: 30px 50px; }
   .section3 > h3 {
-    font-size: 50px;
+    font-size: 40px;
     text-transform: uppercase;
-    padding: 15px 0;
+    padding: 10px 0;
     font-family: 'Hammersmith One', sans-serif; }
 
 .section3 p {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 25px;
   padding-bottom: 15px;
   font-family: 'Raleway', sans-serif; }
 
 .section3 .book-now {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold; }
 
 .section3 .book-link {
@@ -225,7 +256,7 @@ a {
   font-family: 'Permanent Marker', cursive; }
 
 .section3 .signed {
-  font-size: 22px;
+  font-size: 20px;
   margin-right: 50px; }
 
 .section3 .party-image {
@@ -234,12 +265,13 @@ a {
 
 #section4-fa {
   color: #000000;
-  margin-left: -20px; }
+  margin-left: -20px;
+  margin-top: -130px; }
 
 .section4 {
   height: 100vh;
-  padding: 40px 50px;
-  margin-top: 50px; }
+  padding: 70px 50px;
+  margin-top: 150px; }
 
 .section4 .register-blurb, .section4 .register-here {
   height: auto; }
