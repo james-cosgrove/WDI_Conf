@@ -11,4 +11,4 @@ Location and conference information
 Timetable and title of presentations/talks
 Speakers Profiles
 Sponsors
-Technology & Tools suggestion: static site builders (eg. middleman), frontend development boilerplate (sass, gulp, webpack)
+Technology & Tools suggestion: static site builders (eg. middleman), front end development boilerplate (sass, gulp, webpack)
