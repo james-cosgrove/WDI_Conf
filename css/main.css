@@ -296,3 +296,6 @@ a {
   /* Chrome, Safari, Opera */
   transform: rotate(-7deg);
   margin-left: 80px; }
+
+.speaker-modal {
+  top: 15%; }
