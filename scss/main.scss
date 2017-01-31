@@ -216,13 +216,13 @@ padding-top: 15px;
   text-decoration: none;
 }
 
-#container {
+.plain-container {
   height:90%;
   margin: 0 auto;
   padding-bottom: 10px;
 }
 
-#container p {
+.plain-container p {
   padding: 20px;
   font-size: 20px;
   margin-top: 40px;
@@ -256,7 +256,7 @@ padding-top: 15px;
    margin:10px;
  }
 
- #container1 span {
+ .speaker-container span {
    font-weight: bold;
    text-transform: uppercase;
  }
