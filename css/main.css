@@ -4,42 +4,71 @@
 html {
   font-family: 'Hammersmith One', sans-serif; }
 
-#navbar-primary .navbar-nav {
-  background: rgba(237, 237, 237, 0.4);
+nav.smaller .logo-text {
+  max-height: 0;
+  opacity: 0;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  -o-transition: height 0.5s;
+  transition: height 0.5s;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s; }
+
+nav.smaller .navbar-logo {
+  max-height: 40px; }
+
+nav.smaller .navbar-nav {
+  max-height: 60px;
+  background: #212121; }
+
+nav.smaller li.nav-li {
+  margin-top: 24px; }
+
+div.container-fluid {
+  padding-left: 0;
+  padding-right: 0; }
+
+li.nav-li {
+  margin-top: 64.2px;
+  -webkit-transition: margin-top 0.5s;
+  -moz-transition: margin-top 0.5s;
+  -ms-transition: margin-top 0.5s;
+  -o-transition: margin-top 0.5s;
+  transition: margin-top 0.5s; }
+
+.navbar-nav {
+  background: rgba(33, 33, 33, 0.8);
+  -webkit-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+  -ms-transition: background 0.5s;
+  -o-transition: background 0.5s;
+  transition: background 0.5s;
   width: 100%;
-  text-align: center;
+  display: inline-flex;
+  justify-content: center;
   margin: 0;
   padding: 0;
-  height: 100px;
-  -webkit-transition: height 0.3s;
-  -moz-transition: height 0.3s;
-  -ms-transition: height 0.3s;
-  -o-transition: height 0.3s;
-  transition: height 0.3s; }
-  #navbar-primary .navbar-nav > li {
-    margin-left: 50px;
-    display: inline-block;
-    float: none;
-    font-variant: small-caps; }
-    #navbar-primary .navbar-nav > li > a {
-      padding-left: 30px;
-      padding-right: 30px;
-      font-size: 18px;
+  max-height: 102px;
+  -webkit-transition: max-height 0.5s;
+  -moz-transition: max-height 0.5s;
+  -ms-transition: max-height 0.5s;
+  -o-transition: max-height 0.5s;
+  transition: max-height 0.5; }
+  .navbar-nav > li {
+    padding: 10px 0 0 0;
+    text-align: center;
+    width: 260px;
+    letter-spacing: 2px; }
+    .navbar-nav > li > a {
+      padding: 0px;
+      font-size: 25px;
+      color: #ffffff;
       text-decoration: none;
       font-family: 'Hammersmith One', sans-serif; }
-
-nav.smaller {
-  height: 60px; }
-
-nav.smaller #logo-navbar-middle {
-  height: 30px;
-  width: auto; }
-
-nav.smaller .logo-text {
-  font-size: 20px; }
-
-nav.smaller a {
-  color: #333333; }
 
 a {
   color: #ffffff; }
@@ -58,20 +87,27 @@ a {
 .nav > li:focus, .nav > li:hover {
   color: #B435B4; }
 
-#logo-navbar-middle {
-  height: 50px;
+.navbar-logo {
+  max-height: 50px;
   width: auto;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s; }
+  -webkit-transition: max-height 0.5s;
+  -moz-transition: max-height 0.5s;
+  -ms-transition: max-height 0.5s;
+  -o-transition: max-height 0.5s;
+  transition: max-height 0.5s; }
 
 .logo-text {
   font-family: 'Hammersmith One', sans-serif;
   font-size: 28px;
   color: #B435B4;
-  padding-top: 15px; }
+  padding-top: 15px;
+  height: 50px;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s; }
 
 .main-body {
   text-align: center;
@@ -127,14 +163,9 @@ a {
   margin-top: 10%;
   width: 400px; }
 
-#spinner:hover {
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused; }
-
 .fa-angle-down {
   color: #ffffff;
-  margin-left: 50%;
-  padding-top: 10px;
+  margin-left: 48.35%;
   transition: all .2s ease-in-out; }
 
 .fa-angle-down:hover {
@@ -147,21 +178,20 @@ a {
 .section2 h2 {
   font-size: 60px;
   text-align: center;
-  margin-top: 100px;
-  padding-top: 30px;
+  margin-top: 10px;
+  padding-top: 20px;
   font-family: 'Hammersmith One', sans-serif; }
 
 .section2-header p {
   font-size: 20px;
   text-align: center;
-  padding-top: 20px;
   font-family: 'Raleway', sans-serif;
   font-style: italic; }
 
 .experience-box {
   height: 450px;
   border: 2px solid #000000;
-  margin: 60px 20px 0;
+  margin: 10px 20px 0;
   font-family: 'Hammersmith One', sans-serif;
   position: absolute;
   top: 0;
@@ -171,7 +201,7 @@ a {
 
 .experience-box h3 {
   text-align: center;
-  padding-top: 15px; }
+  padding-top: 5px; }
 
 .experience-box a {
   color: blue;
@@ -220,8 +250,7 @@ a {
 
 #section3-fa {
   color: #000000;
-  margin-top: 500px;
-  margin-left: 700px; }
+  margin-top: 460px; }
 
 .section3 {
   height: 100vh;
@@ -265,8 +294,7 @@ a {
 
 #section4-fa {
   color: #000000;
-  margin-left: -20px;
-  margin-top: -130px; }
+  margin-left: 0%; }
 
 .section4 {
   height: 100vh;
