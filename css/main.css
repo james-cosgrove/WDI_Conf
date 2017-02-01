@@ -193,7 +193,7 @@ a {
   font-family: 'Raleway', sans-serif; }
 
 #front-box {
-  background-color: rgba(180, 53, 180, 0.95);
+  background-color: #B435B4;
   z-index: 4; }
 
 .lang-logos {
@@ -302,3 +302,6 @@ a {
 
 .speaker-header {
   font-size: 18px; }
+
+.modal-footer .close-modal:hover {
+  background-color: #B435B4; }
