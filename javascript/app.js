@@ -15,7 +15,7 @@ $(document).ready(function() {
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         if (target.length) {
           $('html, body').animate({
-            scrollTop: target.offset().top - $("#navbar-primary").height()
+            scrollTop: target.offset().top - 60
           }, 1000);
           return false;
         }
@@ -25,7 +25,7 @@ $(document).ready(function() {
 
   function init() {
     window.addEventListener('scroll', function(e) {
-      var distanceY = window.pageYOffset || document.documentElement.scrollBottom;
+      var distanceY = window.pageYOffset || document.documentElement.scrollTop;
       shrinkOn = 630;
       // var header = document.querySelector("#navbar-primary");
       if (distanceY > shrinkOn) {
