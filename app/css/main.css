@@ -26,14 +26,14 @@ nav.smaller .navbar-nav {
   background: #212121; }
 
 nav.smaller li.nav-li {
-  margin-top: 24px; }
+  margin-top: 14px; }
 
 div.container-fluid {
   padding-left: 0;
   padding-right: 0; }
 
 li.nav-li {
-  margin-top: 64.2px;
+  margin-top: 63.2px;
   -webkit-transition: margin-top 0.5s;
   -moz-transition: margin-top 0.5s;
   -ms-transition: margin-top 0.5s;
@@ -49,7 +49,7 @@ li.nav-li {
   transition: background 0.5s;
   width: 100%;
   display: inline-flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   max-height: 102px;
@@ -62,13 +62,14 @@ li.nav-li {
     padding: 10px 0 0 0;
     text-align: center;
     width: 260px;
-    letter-spacing: 2px; }
+    letter-spacing: 3px; }
     .navbar-nav > li > a {
       padding: 0px;
-      font-size: 25px;
+      font-size: 23px;
       color: #ffffff;
       text-decoration: none;
-      font-family: 'Hammersmith One', sans-serif; }
+      font-family: 'Helvetica', sans-serif;
+      font-weight: lighter; }
 
 a {
   color: #ffffff; }
@@ -120,7 +121,11 @@ a {
   color: #B435B4; }
 
 .main-body p {
-  font-size: 38px; }
+  font-size: 38px;
+  background: rgba(33, 33, 33, 0.6);
+  display: block;
+  width: 400px;
+  margin: 0 auto; }
 
 /* WebKit and Opera browsers */
 @-webkit-keyframes spinner {
@@ -165,7 +170,7 @@ a {
 
 .fa-angle-down {
   color: #ffffff;
-  margin-left: 48.35%;
+  margin-left: 48.45%;
   transition: all .2s ease-in-out; }
 
 .fa-angle-down:hover {
@@ -255,12 +260,10 @@ a {
 .section3 {
   height: 100vh;
   text-align: center;
-  margin-top: 50px;
-  padding: 30px 50px; }
+  padding: 20px 50px; }
   .section3 > h3 {
     font-size: 40px;
     text-transform: uppercase;
-    padding: 10px 0;
     font-family: 'Hammersmith One', sans-serif; }
 
 .section3 p {
@@ -289,17 +292,21 @@ a {
   margin-right: 50px; }
 
 .section3 .party-image {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   height: auto; }
 
 #section4-fa {
+  display: block;
   color: #000000;
-  margin-left: 0%; }
+  width: 45px; }
+
+#section4-fa:hover {
+  text-decoration: none; }
 
 .section4 {
-  height: 100vh;
-  padding: 70px 50px;
-  margin-top: 150px; }
+  height: 95vh;
+  padding: 50px 20px 0 20px; }
 
 .section4 .register-blurb, .section4 .register-here {
   height: auto; }
@@ -316,11 +323,13 @@ a {
   font-family: 'Hammersmith One', sans-serif; }
 
 .section4 .friends-fingers {
-  width: 60%;
+  width: 55%;
   height: auto;
   -ms-transform: rotate(-7deg);
   /* IE 9 */
   -webkit-transform: rotate(-7deg);
   /* Chrome, Safari, Opera */
   transform: rotate(-7deg);
-  margin-left: 80px; }
+  margin-left: 80px;
+  position: relative;
+  bottom: 25px; }
