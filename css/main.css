@@ -2,7 +2,9 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
 html {
-  font-family: 'Hammersmith One', sans-serif; }
+  font-family: 'Hammersmith One', sans-serif;
+  position: relative;
+  min-height: 100%; }
 
 #navbar-primary .navbar-nav {
   background: rgba(237, 237, 237, 0.4);
@@ -291,8 +293,48 @@ a {
   width: 60%;
   height: auto;
   -ms-transform: rotate(-7deg);
-  /* IE 9 */
   -webkit-transform: rotate(-7deg);
-  /* Chrome, Safari, Opera */
   transform: rotate(-7deg);
   margin-left: 80px; }
+
+#sponsor-fa {
+  color: #000000;
+  margin-left: 650px; }
+
+footer {
+  background-color: #44B3E7;
+  font-family: 'Hammersmith One', sans-serif;
+  text-align: center;
+  position: absolute;
+  width: 100%; }
+
+footer h3 {
+  font-size: 30px;
+  margin-top: 80px; }
+
+footer p {
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  padding: 40px; }
+
+footer a:hover {
+  text-decoration: none; }
+
+footer .sponsor-logo {
+  height: 100px;
+  width: auto; }
+
+footer .footer-nav {
+  padding-top: 60px; }
+
+footer .footer-nav ul {
+  margin: 0; }
+
+footer .footer-nav li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 5px 15px 40px; }
+
+footer .footer-conf-logo {
+  height: 30px;
+  width: auto; }
