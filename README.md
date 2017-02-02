@@ -28,8 +28,8 @@ Our main goal was to create the landing page of the WDI Conf experience. This pa
 An initial group meeting helped to divide tasks based on experience and preference.  There was a group brainstorm session that led to the creating of a layout.  Below is a breakdown of how tasks were divided.
  
  - James and Tess worked on front end development logic
- - Jamie Front End Design 
- - Tia and Sergio worked on Bot Logic
+ - Jaime Front End Design 
+ - Tya and Sergio worked on Bot Logic
  - Thomas worked on README
 
 
@@ -49,7 +49,7 @@ An application that allow attendees to view and book a seat(s) at any of the pla
 
 ### Process/Approach Taken
 
-Ticketing was arranged by the use of the third party event management system Eventbrite.  Jamie created an account to setup ticketing, and embedded to provided code to allow for ticketing.  
+Ticketing was arranged by the use of the third party event management system Eventbrite.  Jaime created an account to setup ticketing, and embedded to provided code to allow for ticketing.  
 
 ---
 
