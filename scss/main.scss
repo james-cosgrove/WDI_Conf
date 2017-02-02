@@ -3,9 +3,17 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
 $speaker-color: #B435B4;
+$accent-color: #44B3E7;
 
 html {
   font-family: 'Hammersmith One', sans-serif;
+  position: relative;
+  min-height: 100%;
+}
+
+nav.smaller {
+  background: #ffffff;
+  color: rgba(33,33,33,1);
 }
 
 nav.smaller .logo-text {
@@ -15,6 +23,34 @@ nav.smaller .logo-text {
   -ms-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
+  color: rgba(33,33,33,1);
+}
+
+#navbar-primary .navbar-nav {
+ background: rgba(237,237,237,0.40);
+  width: 100%;
+  text-align: center;
+  margin:0;
+  padding:0;
+  max5height:100px;
+  -webkit-transition: max-height 0.5s;
+  -moz-transition: max-height 0.5s;
+  -ms-transition: max-height 0.5s;
+  -o-transition: max-height 0.5s;
+  transition: max-height 0.5s;
+  > li {
+    display: inline-block;
+    float: none;
+    font-variant: small-caps;
+    > a {
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: 20px;
+      color: rgba(33,33,33,1);
+      text-decoration: none;
+      font-family: 'Hammersmith One', sans-serif;
+    }
+  }
 }
 
 nav.smaller .navbar-logo {
@@ -43,6 +79,11 @@ nav.smaller li.nav-li  {
 div.container-fluid {
   padding-left: 0;
   padding-right: 0;
+}
+
+
+nav .logo-text {
+  font-size: 22px;
 }
 
 li.nav-li {
@@ -209,6 +250,7 @@ color: $speaker-color;
    color: #ffffff;
    margin-left: 48.45%;
    transition: all .2s ease-in-out;
+   margin-bottom: 40px;
  }
 
  .fa-angle-down:hover{
@@ -238,7 +280,7 @@ color: $speaker-color;
  .experience-box {
    height: 450px;
    border: 2px solid #000000;
-   margin: 10px 20px 0;
+   margin: 10px 20px 0 30px;
    font-family: 'Hammersmith One', sans-serif;
    position: absolute;
    top: 0;
@@ -282,7 +324,7 @@ color: $speaker-color;
 
 .lang-logos {
    height:60px;
-   padding: 0 10px;
+   padding: 0 10px 10px 10px;
    margin: 0 0 20px 30px;
  }
 
@@ -387,7 +429,7 @@ color: $speaker-color;
   }
 
   .section4 .register-blurb {
-    background-color: #44B3E7;
+    background-color: $accent-color;
     padding: 30px;
     > p {
       font-size: 18px;
@@ -424,4 +466,65 @@ color: $speaker-color;
     .close-modal:hover {
       background-color: $speaker-color;
     }
+    -ms-transform: rotate(-7deg);
+    -webkit-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+    margin-left: 80px;
+  }
+
+#sponsor-fa {
+  color: #000000;
+  margin-left: 650px;
+}
+
+  footer {
+    background-color: $accent-color;
+    font-family: 'Hammersmith One', sans-serif;
+    text-align: center;
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+  }
+
+  #sponsors h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 85px;
+  }
+
+  footer h3 {
+    font-size: 30px;
+    margin-top: 80px;
+  }
+
+  footer p {
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    padding: 40px;
+  }
+
+  footer a:hover {
+    text-decoration: none;
+  }
+
+  footer .sponsor-logo {
+    height: 100px;
+    width:auto;
+  }
+
+  footer .footer-nav{
+    padding-top: 210px;
+  }
+
+  footer .footer-nav ul {
+    margin: 0;
+  }
+  footer .footer-nav li {
+    display:inline-block;
+    list-style-type: none;
+    padding: 5px 15px 40px;
+  }
+  footer .footer-conf-logo {
+    height: 30px;
+    width: auto;
+    margin-bottom: 80px;
   }
