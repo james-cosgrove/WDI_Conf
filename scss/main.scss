@@ -9,18 +9,12 @@ html {
 }
 
 nav.smaller .logo-text {
-  max-height: 0;
   opacity: 0;
-  -webkit-transition: height 0.5s;
-  -moz-transition: height 0.5s;
-  -ms-transition: height 0.5s;
-  -o-transition: height 0.5s;
-  transition: height 0.5s;
-  -webkit-transition: opacity 0.5s;
-  -moz-transition: opacity 0.5s;
-  -ms-transition: opacity 0.5s;
-  -o-transition: opacity 0.5s;
-  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 
 nav.smaller .navbar-logo {
@@ -30,10 +24,20 @@ nav.smaller .navbar-logo {
 nav.smaller .navbar-nav {
   max-height: 60px;
   background: rgba(33,33,33,1);
+  -webkit-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+  -ms-transition: background 0.5s;
+  -o-transition: background 0.5s;
+  transition: background 0.5s;
+  -webkit-transition: max-height 0.5s;
+  -moz-transition: max-height 0.5s;
+  -ms-transition: max-height 0.5s;
+  -o-transition: max-height 0.5s;
+  transition: max-height 0.5;
 }
 
 nav.smaller li.nav-li  {
-  margin-top: 14px;
+  margin-top: 10px;
 }
 
 div.container-fluid {
@@ -69,7 +73,7 @@ li.nav-li {
   -o-transition: max-height 0.5s;
   transition: max-height 0.5;
   > li {
-    padding: 10px 0 0 0;
+    padding: 10px 0 8px 0;
     text-align: center;
     width: 260px;
     letter-spacing: 3px;
@@ -87,6 +91,7 @@ li.nav-li {
 a {
   color: #ffffff;
 }
+
 .main-section {
   background-image: url("/images/conference-background.jpg");
   background-position:center;
@@ -115,17 +120,16 @@ color: $speaker-color;
 }
 
 .logo-text{
-font-family: 'Hammersmith One', sans-serif;
-font-size: 28px;
-color: $speaker-color;
-padding-top: 15px;
-height: 50px;
-opacity: 1;
--webkit-transition: opacity 0.5s;
--moz-transition: opacity 0.5s;
--ms-transition: opacity 0.5s;
--o-transition: opacity 0.5s;
-transition: opacity 0.5s;
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 28px;
+  color: $speaker-color;
+  padding-top: 15px;
+  max-height: 50px;
+  -webkit-transition: opacity 0.8s;
+  -moz-transition: opacity 0.8s;
+  -ms-transition: opacity 0.8s;
+  -o-transition: opacity 0.8s;
+  transition: opacity 0.8s;
 }
 
 .main-body{
@@ -317,6 +321,7 @@ transition: opacity 0.5s;
      font-size: 40px;
      text-transform: uppercase;
      font-family: 'Hammersmith One', sans-serif;
+     margin-top: 0;
    }
  }
 
@@ -330,6 +335,10 @@ transition: opacity 0.5s;
   .section3 .book-now {
     font-size: 20px;
     font-weight: bold;
+    display: block;
+    float: left;
+    margin-left: 70px;
+    margin-top: 20px;
   }
 
   .section3 .book-link {
@@ -348,7 +357,8 @@ transition: opacity 0.5s;
 
   .section3 .signed {
     font-size: 20px;
-    margin-right: 50px;
+    margin-right: 70px;
+    display: block;
   }
 
   .section3 .party-image {

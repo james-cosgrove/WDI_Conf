@@ -29,11 +29,13 @@ $(document).ready(function() {
       shrinkOn = 630;
       // var header = document.querySelector("#navbar-primary");
       if (distanceY > shrinkOn) {
+        // $('#logo-text').slideUp(500);
         $('nav').addClass("smaller");
         // $('#logo-navbar-middle').hide();
       } else {
         $('nav').hasClass("smaller");
         $('nav').removeClass("smaller");
+        // $('#logo-text').slideDown(500);
         // $('#logo-navbar-middle').show();
       }
     });
