@@ -113,7 +113,7 @@ a {
   color: #ffffff; }
 
 .main-section {
-  background-image: url("/images/conference-background.jpg");
+  background-image: url("../images/conference-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
