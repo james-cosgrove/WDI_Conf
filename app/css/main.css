@@ -439,3 +439,15 @@ footer .footer-conf-logo {
   height: 30px;
   width: auto;
   margin-bottom: 80px; }
+
+div.footer-nav {
+  background-color: #44B3E7; }
+
+footer {
+  margin-top: 100px; }
+
+.chat-box-container {
+  position: fixed;
+  top: 100px;
+  right: -700px;
+  z-index: 10; }
